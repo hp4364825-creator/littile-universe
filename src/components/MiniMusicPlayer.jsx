@@ -25,19 +25,20 @@ const MiniMusicPlayer = () => {
 
   return (
     <div
+      className="mini-music-player"
       style={{
         position: 'fixed',
         bottom: '24px',
         right: '24px',
         zIndex: 100,
-        background: 'rgba(13, 19, 41, 0.85)',
+        background: 'rgba(13, 19, 41, 0.88)',
         backdropFilter: 'blur(16px)',
         border: '1px solid rgba(255, 255, 255, 0.12)',
         borderRadius: '9999px',
-        padding: '8px 18px',
+        padding: '8px 16px',
         display: 'flex',
         alignItems: 'center',
-        gap: '12px',
+        gap: '10px',
         boxShadow: '0 10px 30px rgba(0, 0, 0, 0.6), 0 0 20px rgba(168, 85, 247, 0.2)',
         transition: 'all 0.3s ease'
       }}

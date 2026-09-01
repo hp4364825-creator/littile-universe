@@ -49,40 +49,42 @@ const Navbar = ({ onTriggerEasterEgg }) => {
           cursor: 'pointer'
         }}
       >
-        <Sparkles size={20} color="#c4b5fd" className="animate-pulse" />
-        <span className="font-serif-heading" style={{ fontSize: '1.25rem', fontWeight: 600, letterSpacing: '0.03em', color: '#f8fafc' }}>
-          A Little Universe • Echchha ✨
+        <Sparkles size={18} color="#c4b5fd" className="animate-pulse" />
+        <span className="font-serif-heading" style={{ fontSize: 'clamp(1rem, 3.5vw, 1.25rem)', fontWeight: 600, letterSpacing: '0.02em', color: '#f8fafc', whiteSpace: 'nowrap' }}>
+          A Little Universe <span className="hidden sm:inline">• Echchha</span> ✨
         </span>
       </div>
 
-      {/* Desktop Quick Nav Links */}
-      <nav style={{ display: 'flex', alignItems: 'center', gap: '20px' }}>
-        <button
-          onClick={() => scrollToSection('stars-section')}
-          className="btn-universe-secondary"
-          style={{ padding: '6px 14px', fontSize: '0.85rem' }}
-        >
-          <Compass size={14} style={{ marginRight: '6px' }} />
-          Stars
-        </button>
+      {/* Nav Controls */}
+      <nav style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+        <div className="nav-desktop-links" style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+          <button
+            onClick={() => scrollToSection('stars-section')}
+            className="btn-universe-secondary"
+            style={{ padding: '6px 14px', fontSize: '0.85rem' }}
+          >
+            <Compass size={14} style={{ marginRight: '6px' }} />
+            Stars
+          </button>
 
-        <button
-          onClick={() => scrollToSection('terminal-section')}
-          className="btn-universe-secondary"
-          style={{ padding: '6px 14px', fontSize: '0.85rem' }}
-        >
-          <TerminalIcon size={14} style={{ marginRight: '6px' }} />
-          Terminal
-        </button>
+          <button
+            onClick={() => scrollToSection('terminal-section')}
+            className="btn-universe-secondary"
+            style={{ padding: '6px 14px', fontSize: '0.85rem' }}
+          >
+            <TerminalIcon size={14} style={{ marginRight: '6px' }} />
+            Terminal
+          </button>
 
-        <button
-          onClick={() => scrollToSection('memories-section')}
-          className="btn-universe-secondary"
-          style={{ padding: '6px 14px', fontSize: '0.85rem' }}
-        >
-          <Heart size={14} style={{ marginRight: '6px' }} />
-          Memories
-        </button>
+          <button
+            onClick={() => scrollToSection('memories-section')}
+            className="btn-universe-secondary"
+            style={{ padding: '6px 14px', fontSize: '0.85rem' }}
+          >
+            <Heart size={14} style={{ marginRight: '6px' }} />
+            Memories
+          </button>
+        </div>
 
         {/* Audio Floating Sound Controller */}
         <div style={{ display: 'flex', alignItems: 'center', gap: '8px', background: 'rgba(255, 255, 255, 0.06)', padding: '4px 10px', borderRadius: '9999px', border: '1px solid rgba(255, 255, 255, 0.1)' }}>

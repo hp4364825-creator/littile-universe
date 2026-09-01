@@ -57,7 +57,7 @@ const UniverseSection = () => {
           animation: 'moonPulse 4s ease-in-out infinite',
           zIndex: 20
         }}
-        className="glass-card-interactive"
+        className="hero-moon-btn glass-card-interactive"
       >
         <style>{`
           @keyframes moonPulse {
